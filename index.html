@@ -1,0 +1,39 @@
+<html >
+    <head>
+		<meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="http://mostapharoudsari.github.io/Honeybee/pc_source_files/css/d3.parcoords.css">
+      <link rel="stylesheet" type="text/css" href="lib/d3.slider.css">
+      <link rel="stylesheet" type="text/css" href="src/css/PCP.css">
+
+    	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://mostapharoudsari.github.io/Honeybee/pc_source_files/d3/d3.parcoords.js"></script>
+      <script type="text/javascript" src="lib/d3.slider.js"></script>
+      <script type="text/javascript" src="src/js/PCP.js"></script>
+
+      <title>PCP</title>
+    </head>
+
+    <body style="top:0;left:0;width:100%;height:100%; position:absolute;" onload="init()">
+      <div id="filters" class="filters">
+        <form>
+          <input type="checkbox" id="AgeAtTx" checked onchange="checkbox(this.id, this.checked)"> AgeAtTx </input>
+          <input type="checkbox" id="Gender" checked onchange="checkbox(this.id, this.checked)"> Gender </input>
+          <input type="checkbox" id="Ethnicity" checked onchange="checkbox(this.id, this.checked)"> Ethnicity </input>
+          <input type="checkbox" id="Tcategory" checked onchange="checkbox(this.id, this.checked)"> Tcategory </input>
+          <input type="checkbox" id="Site" checked onchange="checkbox(this.id, this.checked)"> Site </input>
+          <input type="checkbox" id="Nodal_Disease" checked onchange="checkbox(this.id, this.checked)"> Nodal_Disease </input>
+          <input type="checkbox" id="ecog" checked onchange="checkbox(this.id, this.checked)"> ecog </input>
+          <input type="checkbox" id="Chemotherapy" checked onchange="checkbox(this.id, this.checked)"> Chemotherapy </input>
+          <input type="checkbox" id="Local_Therapy" checked onchange="checkbox(this.id, this.checked)"> Local_Therapy </input>
+          <input type="checkbox" id="Survival" checked onchange="checkbox(this.id, this.checked)"> Survival </input>
+          <input type="button" id="updateAxes" value="Update">
+          <input type="button" id="resetAxes" value="Reset">
+        </form>
+      </div>
+      <div id="PCP" class="parcoords" style="top:20;width:90%;height:60%"></div>
+      <div id="slider1" class="slider1" style="left:50;width:10%;height:1.5%;visibility:hidden"></div>
+      <div id="slider2" class="slider2" style="left:400;width:10%;height:1.5%;visibility:hidden"></div>
+      <div id="slider3" class="sliderSurvival" style="left:750;width:10%;height:1.5%;visibility:hidden"></div>
+    </body>
+</html>
